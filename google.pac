@@ -17,7 +17,7 @@ if (isPlainHostName(host)) return "DIRECT";
 
 for (var i=0; i<host_regexps.length; i++) { 
    if (host_regexps[i].test(host)) { 
-      return "PROXY 35.225.208.4:80"; }
+      return "PROXY 216.85.7.155:30131"; }
    } 
   
 return "DIRECT"; 
