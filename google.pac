@@ -1,6 +1,7 @@
 var host_regexps = [
 /google\.com/,
-/google\.cl/
+/google\.cl/,
+/cmyip\.com/
 ]
 
 function FindProxyForURL(url, host) { 
@@ -16,7 +17,7 @@ if (isPlainHostName(host)) return "DIRECT";
 
 for (var i=0; i<host_regexps.length; i++) { 
    if (host_regexps[i].test(host)) { 
-      return "PROXY 205.201.204.33:46220"; }
+      return "PROXY 35.225.208.4:80"; }
    } 
   
 return "DIRECT"; 
